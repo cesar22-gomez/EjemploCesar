@@ -1,0 +1,14 @@
+C:\Users\g3022\source\repos\ProyectoBD\Datos\bin\Debug\net8.0\Datos.deps.json
+C:\Users\g3022\source\repos\ProyectoBD\Datos\bin\Debug\net8.0\Datos.runtimeconfig.json
+C:\Users\g3022\source\repos\ProyectoBD\Datos\bin\Debug\net8.0\Datos.dll
+C:\Users\g3022\source\repos\ProyectoBD\Datos\bin\Debug\net8.0\Datos.pdb
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\Datos.csproj.AssemblyReference.cache
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\Datos.AssemblyInfoInputs.cache
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\Datos.AssemblyInfo.cs
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\Datos.dll
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\refint\Datos.dll
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\Datos.pdb
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\Datos.genruntimeconfig.cache
+C:\Users\g3022\source\repos\ProyectoBD\Datos\obj\Debug\net8.0\ref\Datos.dll

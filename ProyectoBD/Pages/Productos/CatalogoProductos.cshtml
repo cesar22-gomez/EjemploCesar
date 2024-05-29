@@ -1,0 +1,43 @@
+﻿@page
+@model ProyectoBD.Pages.Productos.CatalogoProductosModel
+@{
+}
+<br>
+<h1>Catálogo de Productos</h1>
+<link rel="stylesheet" href="~/css/listaproductos.css" />
+<div class="success-notification" id="success-notification" style="display:none;" data-success-message="@Model.SuccessMessage">
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Código Producto</th>
+            <th>Nombre</th>
+            <th>Presentacion</th>
+            <th>Tamaño</th>
+            <th>Peso</th>
+            <th>Precio</th>
+            <th>Código Categoría</th>
+            <th>Cantidad</th>
+            <th>Carrito de Compra</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in Model.ListaProductos)
+        {
+            <tr>
+                <td>@producto.ProductoId</td>
+                <td>@producto.Nombre</td>
+                <td>@producto.Presentacion</td>
+                <td>@producto.Tamano</td>
+                <td>@producto.Peso</td>
+                <td>@producto.Precio</td>
+                <td>@producto.CategoriaId</td>
+                <td><input type="number" min="1" value="1" class="quantity" /></td>
+                <td><button type="submit" class="btn btn-primary">Agregar al Carrito</button></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<link rel="stylesheet" href="~/css/success-notification.css" />
+<script src="~/js/success-notification.js"></script>

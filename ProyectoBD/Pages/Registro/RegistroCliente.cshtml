@@ -1,0 +1,73 @@
+﻿@page
+@model ProyectoBD.Pages.Registro.RegistroClienteModel
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Cliente</title>
+    <link href="~/css/registro.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/error-notification.css" />
+</head>
+<body>
+    <div class="error-notification" id="error-notification" style="display:none;">
+        @Html.ValidationSummary(false, "", new { @class = "text-white" })
+    </div>
+    <form method="post" class="form form-registro" id="register-form-registro">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="form-inner form-inner-registro">
+            <h2>REGISTRO DE CLIENTE</h2>
+            <div class="contenido contenido-registro">
+                <input name="Nombre" class="input-registro" type="text" placeholder="Nombre" asp-for="Clientes.Nombre" />
+                <input name="ApellidoPaterno" class="input-registro" type="text" placeholder="Apellido Paterno" asp-for="Clientes.ApellidoPaterno" />
+                <input name="ApellidoMaterno" class="input-registro" type="text" placeholder="Apellido Materno" asp-for="Clientes.ApellidoMaterno" />
+                <input name="Identificacion" class="input-registro" type="text" placeholder="Identificacion" asp-for="Clientes.Identificacion" />
+                <input name="Nacionalidad" class="input-registro" type="text" placeholder="Nacionalidad" asp-for="Clientes.Nacionalidad" />
+                <input name="FechaNacimiento" class="input-registro" type="date" placeholder="FechaNacimiento" asp-for="Clientes.FechaNacimiento" />
+                <input name="Provincia" class="input-registro" type="text" placeholder="Provincia" asp-for="Clientes.Provincia" />
+                <input name="Canton" class="input-registro" type="text" placeholder="Canton" asp-for="Clientes.Canton" />
+                <input name="Distrito" class="input-registro" type="text" placeholder="Distrito" asp-for="Clientes.Distrito" />
+                <input name="Barrio" class="input-registro" type="text" placeholder="Barrio" asp-for="Clientes.Barrio" />
+                <input name="DireccionExacta" class="input-registro" type="text" placeholder="Direccion Exacta" asp-for="Clientes.DireccionExacta" />
+                <input name="Telefono1" class="input-registro" type="text" placeholder="Telefono1" asp-for="Clientes.Telefono1" />
+                <input name="Telefono2" class="input-registro" type="text" placeholder="Telefono2" asp-for="Clientes.Telefono2" />
+                <input name="TarjetaTipo" class="input-registro" type="text" placeholder="Tipo de Tarjeta" asp-for="Clientes.TarjetaTipo" />
+                <input name="NumeroTarjeta" class="input-registro" type="text" placeholder="Numero Tarjeta" asp-for="Clientes.NumeroTarjeta" />
+                <input name="MarcaTarjeta" class="input-registro" type="text" placeholder="Marca Tarjeta" asp-for="Clientes.MarcaTarjeta" />
+                <input name="Usuario" class="input-registro" type="text" placeholder="Usuario" asp-for="Clientes.Usuario" />
+                <input name="Contrasena" class="input-registro" type="password" placeholder="Contraseña" asp-for="Clientes.Contrasena" />
+                <!-- Agrega los demás campos del modelo Cliente según sea necesario -->
+
+                <button type="submit" class="btn btn-registro">REGISTRAR</button>
+
+                <p class="login-link-registro">
+                    ¿Ya tienes una cuenta? <a href="Login">Inicia sesión aquí</a>
+                </p>
+            </div>
+        </div>
+    </form>
+    <script src="~/js/error-notification.js"></script>
+    <script>
+        document.getElementById("register-form-registro").addEventListener("submit", function () {
+            var fechaNacimientoInput = document.getElementById("FechaNacimiento");
+            var fechaNacimientoValue = fechaNacimientoInput.value;
+            // Convertir la fecha al formato esperado por el servidor (aaaa/mm/dd)
+            var fechaNacimientoFormatted = formatDate(fechaNacimientoValue);
+            // Asignar el valor formateado al campo de fecha
+            fechaNacimientoInput.value = fechaNacimientoFormatted;
+        });
+
+        function formatDate(dateString) {
+            var parts = dateString.split("/");
+            if (parts.length === 3) {
+                return parts[2] + "-" + parts[1] + "-" + parts[0];
+            }
+            return dateString; // Devuelve la fecha sin cambios si no se puede formatear correctamente
+        }
+    </script>
+</body>
+</html>

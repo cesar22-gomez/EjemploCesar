@@ -1,0 +1,37 @@
+﻿@page
+@model ProyectoBD.Pages.InicioDeSesion.LoginModel
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link href="~/css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/error-notification.css" />
+</head>
+<body>
+    <div class="error-notification" id="error-notification" style="display:none;">
+        @Html.ValidationSummary(false, "", new { @class = "text-white" })
+    </div>
+
+    <form method="post" class="form">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="form-inner">
+            <h2>LOGIN</h2>
+            <div class="content">
+                <input class="input" type="text" placeholder="Usuario" asp-for="Logueo.Usuario" />
+                <input class="input" type="password" placeholder="Contraseña" asp-for="Logueo.Contrasena" />
+                <button type="submit" class="btn">LOGIN</button>
+                <p class="register-link">¿Eres nuevo Cliente? <a href="/Registro/RegistroCliente">Regístrate aquí</a></p>
+                <p class="register-link">¿Eres nuevo Empleado? <a href="/Registro/RegistroEmpleado">Regístrate aquí</a></p>
+            </div>
+        </div>
+    </form>
+    <script src="~/js/error-notification.js"></script>
+</body>
+
+</html>

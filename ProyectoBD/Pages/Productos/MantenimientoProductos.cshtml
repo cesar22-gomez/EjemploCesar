@@ -1,0 +1,53 @@
+﻿@page
+@model ProyectoBD.Pages.Productos.MantenimientoModel
+@{
+}
+<br>
+<h1>Mantenimiento de Productos</h1>
+<link rel="stylesheet" href="~/css/listaproductos.css" />
+<div class="success-notification" id="success-notification" style="display:none;" data-success-message="@Model.SuccessMessage">
+</div>
+<div>
+    <button type="submit" class="btn btn-primary">Restablecer Inventario</button>
+</div>
+<br />
+<form method="get" asp-page="./InsertarProducto">
+    <button type="submit" class="btn btn-primary">Ver Compras Inventario</button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Código Producto</th>
+            <th>Nombre</th>
+            <th>Presentacion</th>
+            <th>Tamaño</th>
+            <th>Peso</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Cantidad Minima</th>
+            <th>Cantidad Maxima</th>
+            <th>Código Categoría</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in Model.ListaProductos)
+        {
+            <tr>
+                <td><a asp-page="./AgregarInventario" asp-route-id="@producto.ProductoId">@producto.ProductoId</a></td>
+                <td>@producto.Nombre</td>
+                <td>@producto.Presentacion</td>
+                <td>@producto.Tamano</td>
+                <td>@producto.Peso</td>
+                <td>@producto.Precio</td>
+                <td>@producto.Stock</td>
+                <td>@producto.CantMinimaInventario</td>
+                <td>@producto.CantMaximaBodega</td>
+                <td>@producto.CategoriaId</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+
+<link rel="stylesheet" href="~/css/success-notification.css" />
+<script src="~/js/success-notification.js"></script>

@@ -1,0 +1,11 @@
+﻿.error-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(244, 67, 54, 0.8); /* Rojo transparente */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}

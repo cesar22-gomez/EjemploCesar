@@ -1,0 +1,58 @@
+﻿@page "{id}"
+@model ProyectoBD.Pages.Productos.AgregarInventarioModel
+<br>
+<h1>Actualizar Producto</h1>
+<link rel="stylesheet" href="~/css/modificarproductos.css" />
+
+<div class="error-notification" id="error-notification" style="display:none;">
+    @Html.ValidationSummary(false, "", new { @class = "text-white" })
+</div>
+
+<form method="post">
+    <div class="form-group">
+        <label for="ProductoId">Código Producto:</label>
+        <input class="form-control" asp-for="Producto.ProductoId" readonly />
+    </div>
+    <div class="form-group">
+        <label for="Nombre">Nombre:</label>
+        <input class="form-control" asp-for="Producto.Nombre" readonly />
+    </div>
+    <div class="form-group">
+        <label for="Presentacion">Presentacion:</label>
+        <input class="form-control" asp-for="Producto.Presentacion" readonly />
+    </div>
+    <div class="form-group">
+        <label for="Tamano">Tamaño:</label>
+        <input class="form-control" asp-for="Producto.Tamano" readonly />
+    </div>
+    <div class="form-group">
+        <label for="Peso">Peso:</label>
+        <input class="form-control" asp-for="Producto.Peso" readonly />
+    </div>
+    <div class="form-group">
+        <label for="Precio">Precio:</label>
+        <input class="form-control" asp-for="Producto.Precio" readonly />
+    </div>
+@*     <div class="form-group">
+        <label for="Stock">Stock:</label>
+        <input class="form-control" asp-for="Producto.Stock" />
+        <span asp-validation-for="Producto.Stock" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="CantMinimaInventario">Cantidad Minima:</label>
+        <input class="form-control" asp-for="Producto.CantMinimaInventario" readonly />
+    </div>
+    <div class="form-group">
+        <label for="CantMaximaBodega">Cantidad Maxima:</label>
+        <input class="form-control" asp-for="Producto.CantMaximaBodega" readonly />
+    </div> *@
+    <div class="form-group">
+        <label for="CategoriaId">Codigo Categoria:</label>
+        <input class="form-control" asp-for="Producto.CategoriaId" readonly />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+</form>
+
+<link rel="stylesheet" href="~/css/error-notification.css" />
+<script src="~/js/error-notification.js"></script>
+

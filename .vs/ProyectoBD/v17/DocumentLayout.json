@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\g3022\\source\\repos\\ProyectoBD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9FCEF597-1696-41C2-894E-79E533FF271A}|DatosBD\\DatosBD.csproj|c:\\users\\g3022\\source\\repos\\proyectobd\\datosbd\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FCEF597-1696-41C2-894E-79E533FF271A}|DatosBD\\DatosBD.csproj|solutionrelative:datosbd\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02011B56-D01F-48B8-959B-8F4FF21EB74C}|ProyectoBD\\ProyectoBD.csproj|c:\\users\\g3022\\source\\repos\\proyectobd\\proyectobd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{02011B56-D01F-48B8-959B-8F4FF21EB74C}|ProyectoBD\\ProyectoBD.csproj|solutionrelative:proyectobd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FCEF597-1696-41C2-894E-79E533FF271A}|DatosBD\\DatosBD.csproj|c:\\users\\g3022\\source\\repos\\proyectobd\\datosbd\\metodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FCEF597-1696-41C2-894E-79E533FF271A}|DatosBD\\DatosBD.csproj|solutionrelative:datosbd\\metodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\g3022\\source\\repos\\ProyectoBD\\DatosBD\\DbContextFactory.cs",
+              "RelativeDocumentMoniker": "DatosBD\\DbContextFactory.cs",
+              "ToolTip": "C:\\Users\\g3022\\source\\repos\\ProyectoBD\\DatosBD\\DbContextFactory.cs",
+              "RelativeToolTip": "DatosBD\\DbContextFactory.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T17:50:05.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\g3022\\source\\repos\\ProyectoBD\\ProyectoBD\\appsettings.json",
+              "RelativeDocumentMoniker": "ProyectoBD\\appsettings.json",
+              "ToolTip": "C:\\Users\\g3022\\source\\repos\\ProyectoBD\\ProyectoBD\\appsettings.json",
+              "RelativeToolTip": "ProyectoBD\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-24T17:49:53.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Metodos.cs",
+              "DocumentMoniker": "C:\\Users\\g3022\\source\\repos\\ProyectoBD\\DatosBD\\Metodos.cs",
+              "RelativeDocumentMoniker": "DatosBD\\Metodos.cs",
+              "ToolTip": "C:\\Users\\g3022\\source\\repos\\ProyectoBD\\DatosBD\\Metodos.cs",
+              "RelativeToolTip": "DatosBD\\Metodos.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T17:18:14.359Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
